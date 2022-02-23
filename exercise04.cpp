@@ -2,7 +2,7 @@
 using namespace std;
 
 void print(int len, int wth);
-void input(int len, int wth);
+void input(int &len, int &with);
 
 // Do not change the main() function
 int main() {
@@ -18,4 +18,11 @@ void print(int len, int wth) {
         << ", Width  : " << wth << endl;
 }
 
-// Implement the Input Function here
+void input(int &len, int &wth)
+{
+  cout<<"Enter the length : ";
+  cin>>len;
+  cout<<"Enter the width : ";
+  cin>>wth;
+}
+
